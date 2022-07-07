@@ -1,0 +1,35 @@
+.project {
+    width: 250px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.iconProject {
+    height: 250px;
+    width: 250px;
+    background-color: burlywood;
+    display: flex;
+}
+
+.btn {
+    align-self: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.title {
+    background-color: gainsboro;
+}
+
+.description {
+    background-color: blanchedalmond;
+}
+
+
+
+
+
+

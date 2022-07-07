@@ -1,0 +1,10 @@
+.huntMeBlock {
+    height: 50vh;
+}
+.huntMeContainer {
+    border: 1px solid;
+}
+.huntMeWrapper {
+    display: flex;
+    flex-direction: column;
+}

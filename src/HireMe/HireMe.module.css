@@ -1,10 +1,19 @@
-.huntMeBlock {
+.hireMeBlock {
     height: 50vh;
+    background-color: blanchedalmond;
 }
-.huntMeContainer {
+.hireMeContainer {
     border: 1px solid;
 }
-.huntMeWrapper {
+.hireMeWrapper {
     display: flex;
     flex-direction: column;
+}
+
+.title {
+    text-align: center;
+}
+
+.btn {
+
 }

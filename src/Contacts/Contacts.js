@@ -12,7 +12,7 @@ function Contacts() {
                     <input type="text"/>
                     <textarea name="" id="" cols={30} rows={10}></textarea>
                 </form>
-                <button className={s.btn}>Send</button>
+                <button type='submit' className={s.btn}>Send</button>
             </div>
         </div>
     )

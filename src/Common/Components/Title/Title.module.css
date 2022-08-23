@@ -1,0 +1,27 @@
+
+.title {
+    /*background-color: beige;*/
+    margin-top: 40px;
+    position: relative;
+}
+
+.title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #c4cfde;
+    margin: 0;
+
+}
+
+.title::before {
+    position: absolute;
+    content: '';
+    background: #ff014f;
+    width: 55px;
+    height: 3px;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}

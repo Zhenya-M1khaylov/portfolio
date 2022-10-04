@@ -1,6 +1,6 @@
 .project {
     width: 250px;
-    background-color: #22272d;
+    /*background-color: #22272d;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,17 +8,37 @@
 }
 
 .iconProject {
-    height: 250px;
-    width: 250px;
-    background-color: burlywood;
+    height: 350px;
+    width: 500px;
+    /*background-color: burlywood;*/
     display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.iconProject::before {
+    position: absolute;
+    content: '';
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
 }
 
 .btn {
     align-self: center;
     margin: 0 auto;
     cursor: pointer;
-    background-color: beige;
+    background-color: white;
+    padding: 10px 20px;
+    color: #12141d;
+    position: relative;
+    z-index: 1;
 }
 
 .projectInfo {
@@ -26,19 +46,19 @@
 }
 
 .projectTitle {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 20px;
-    color: #c4cfde;
+    color: #12141d;
 }
 
 .projectDescription {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 28px;
-    color: #c4cfde;
+    color: #12141d;
     margin-bottom: 22px;
     text-align: left;
 }

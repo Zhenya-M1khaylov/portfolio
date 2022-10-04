@@ -5,7 +5,7 @@ import s from './Project.module.css'
 const Project = (props) => {
     return (
         <div className={s.project}>
-            <div className={s.iconProject}>
+            <div className={s.iconProject} style={props.style}>
                 <a className={s.btn}>Look</a>
             </div>
             <div className={s.projectInfo}>

@@ -10,7 +10,7 @@
     font-size: 60px;
     font-weight: 700;
     line-height: 1.2;
-    color: #c4cfde;
+    color: #12141d;
     margin: 0;
 
 }
@@ -18,7 +18,8 @@
 .title::before {
     position: absolute;
     content: '';
-    background: #ff014f;
+    /*background: #ff014f;*/
+    background: white;
     width: 55px;
     height: 3px;
     bottom: -20px;

@@ -1,6 +1,8 @@
+@import "./src/Common/Styles/Sass/variables.scss";
+
 .footerBlock {
     height: content-box;
-    background-color: #a4e9ff;
+    background-color: $bgColor;
 }
 
 .footerContainer {

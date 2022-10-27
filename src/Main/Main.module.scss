@@ -1,6 +1,8 @@
+@import "./src/Common/Styles/Sass/variables.scss";
+
 .mainBlock {
     height: 100vh;
-    background-color: #c6a7be;
+    background-color: $bgSecondColor;
 }
 
 .text {

@@ -1,6 +1,8 @@
+@import "./src/Common/Styles/Sass/variables.scss";
+
 .skillsBlock {
     min-height: 100vh;
-    background-color: cadetblue;
+    background-color: $bgColor;
 }
 
 .skillsContainer {

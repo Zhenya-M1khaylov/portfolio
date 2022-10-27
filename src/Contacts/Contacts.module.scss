@@ -1,6 +1,8 @@
+@import "./src/Common/Styles/Sass/variables";
+
 .contactsBlock {
     height: 100vh;
-    background-color: #fbcaff;
+    background-color: $bgSecondColor;
 }
 
 .contactsContainer {

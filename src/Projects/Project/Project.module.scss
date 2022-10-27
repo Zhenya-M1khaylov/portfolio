@@ -1,0 +1,79 @@
+@import "./src/Common/Styles/Sass/variables";
+
+.project {
+    width: 250px;
+    background-color: $bgSecondColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .iconProject {
+        height: 350px;
+        width: 500px;
+        display: flex;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        // & будет = iconProject
+        &::before {
+            position: absolute;
+            content: '';
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.5;
+        }
+        .btn {
+            align-self: center;
+            margin: 0 auto;
+            cursor: pointer;
+            background-color: $primaryColor;
+            padding: 10px 20px;
+            color: $textColor;
+            position: relative;
+            z-index: 1;
+        }
+    }
+    .projectInfo {
+        padding: 20px;
+        .projectTitle {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 20px;
+            color: $textColor;
+        }
+        .projectDescription {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            line-height: 28px;
+            color: $textColor;
+            margin-bottom: 22px;
+            text-align: left;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

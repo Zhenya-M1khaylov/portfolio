@@ -1,5 +1,5 @@
 import React from "react";
-import s from './HireMe.module.css';
+import s from './HireMe.module.scss';
 import styleContainer from './../Common/Styles/Container.module.css';
 
 function HireMe() {

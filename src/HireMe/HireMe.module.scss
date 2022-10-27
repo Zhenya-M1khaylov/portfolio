@@ -1,6 +1,8 @@
+@import "./src/Common/Styles/Sass/variables";
+
 .hireMeBlock {
     height: 50vh;
-    background-color: blanchedalmond;
+    background-color: $bgColor;
 }
 .hireMeContainer {
     border: 1px solid;

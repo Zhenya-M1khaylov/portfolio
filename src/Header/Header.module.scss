@@ -1,0 +1,10 @@
+@import "./src/Common/Styles/Sass/variables.scss";
+
+.header {
+    height: 80px;
+    background-color: $bgColor;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 45px;
+}

@@ -1,12 +1,18 @@
 import React from 'react';
-import s from './Title.module.css'
+import s from './Title.module.scss'
 
-const Title = (props) => {
+export const Title = (props) => {
     return (
-        <div className={s.title}>
+        <div className={s.titleBlock}>
             <h2>{props.value}</h2>
+            <div className={s.horizontalLine}>
+                <div className={s.top}/>
+                <div className={s.bottom}/>
+            </div>
         </div>
     );
 };
 
 export default Title;
+
+

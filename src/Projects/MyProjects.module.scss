@@ -5,12 +5,12 @@
   background-color: $bgSecondColor;
 
   .projectsContainer {
-    flex-direction: column;
     justify-content: flex-start;
 
     .projects {
       border: 1px solid;
-      width: 1350px;
+      //width: 1350px;
+      width: 100%;
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;

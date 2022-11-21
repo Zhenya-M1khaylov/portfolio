@@ -1,0 +1,21 @@
+@import "./src/Common/Styles/Sass/variables";
+@import "./src/Common/Styles/Sass/mixins";
+
+
+.buttonBlock {
+  button {
+    @include textForAll($montserrat, 14px, 700, $buttonTextColor);
+    padding: 0 50px;
+    background-color: $buttonColor;
+    border-radius: 5px;
+    min-height: 47px;
+    text-transform: uppercase;
+    transition: 0.4s;
+
+    &:hover {
+      background-color: $buttonHoverColor;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+  }
+}

@@ -4,9 +4,9 @@ import Header from "./Header/Header";
 import Main from "./Main/Main";
 import Skills from "./Skills/Skills";
 import MyProjects from "./Projects/MyProjects";
-import HireMe from "./HireMe/HireMe";
 import Contacts from "./Contacts/Contacts";
 import Footer from "./Footer/Footer";
+import {AboutMe} from "./AboutMe/AboutMe";
 
 
 function App() {
@@ -14,9 +14,9 @@ function App() {
         <div className="App">
             <Header/>
             <Main/>
+            <AboutMe />
             <Skills />
             <MyProjects />
-            <HireMe />
             <Contacts />
             <Footer />
         </div>

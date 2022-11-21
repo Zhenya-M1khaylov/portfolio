@@ -2,14 +2,14 @@
 
 .footerBlock {
     height: content-box;
-    background-color: $bgColor;
+    background-color: $bgFirstColor;
 }
 
 .footerContainer {
     flex-direction: column;
 }
 
-.title {
+.titleBlock {
     background-color: #8a88ff;
 }
 

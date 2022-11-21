@@ -1,0 +1,7 @@
+@import "./src/Common/Styles/Sass/variables";
+@import "./src/Common/Styles/Sass/mixins";
+
+.mainTextAndStatContainer {
+  display: flex;
+  justify-content: center;
+}

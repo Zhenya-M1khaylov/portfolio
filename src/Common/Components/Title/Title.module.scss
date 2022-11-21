@@ -1,4 +1,5 @@
 @import "./src/Common/Styles/Sass/variables";
+@import "./src/Common/Styles/Sass/mixins";
 
 //.titleBlock {
 //  margin-top: 40px;
@@ -49,7 +50,7 @@
   text-transform: uppercase;
   text-align: center;
   h2 {
-    //@include text($montserrat, 32px, 700, $textColor);
+    @include textTitle($montserrat, 32px, 700, $textColor);
     line-height: 24px;
     text-transform: uppercase;
     margin: 0 0 15px;

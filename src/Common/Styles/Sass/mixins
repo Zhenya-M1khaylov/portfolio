@@ -1,0 +1,43 @@
+@import "./variables";
+
+@mixin text( $fontFamily, $fontSize, $lineHeight) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $textColor;
+}
+
+@mixin textTitle($fontFamily, $fountSize, $fontWeight, $color) {
+  font-family: $fontFamily;
+  font-size: $fountSize;
+  font-weight: $fontWeight;
+  color: $color;
+  letter-spacing: 0.4px;
+}
+
+@mixin icon ($content, $size, $border, $background) {
+  border-radius: 50%;
+  height: $size;
+  width: $size;
+  line-height: $size;
+  position: relative;
+  text-align: center;
+  border: $border;
+  background: $background;
+
+  &:before {
+    width: 100%;
+    position: absolute;
+    content: $content;
+    display: block;
+  }
+}
+
+
+@mixin textForAll($fontFamily, $fountSize, $fontWeight, $color) {
+  font-family: $fontFamily;
+  font-size: $fountSize;
+  font-weight: $fontWeight;
+  color: $color;
+  letter-spacing: 0.4px;
+}

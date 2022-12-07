@@ -1,8 +1,6 @@
 import React from 'react'
 import s from './SkillBar.module.scss'
 
-
-
 export const SkillBar = (props) => {
     return (
         <div className={s.skillBar}>

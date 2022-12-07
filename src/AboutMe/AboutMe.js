@@ -1,15 +1,14 @@
 import React from 'react'
 import s from './AboutMe.module.scss'
 import {Button} from "../Common/Components/Button/Button";
-import Title from "../Common/Components/Title/Title";
 import {SkillBar} from "./SkillBar/SkillBar";
-
+import {Title} from "../Common/Components/Title/Title";
 
 
 export const AboutMe = () => {
     return (
         <div className={s.aboutBlock}>
-            <Title titleName={'About me'}/>
+            <Title value={'About me'}/>
             <div className={s.mainTextAndStatContainer}>
                 <div className={s.aboutContainer}>
                     <div className={s.mainText}>
@@ -24,8 +23,8 @@ export const AboutMe = () => {
                     <div className={s.right}>
                         <div className={s.stat}>
                             <SkillBar skill={'JavaScript / TypeScript'} percent={85}/>
-                            <SkillBar skill={'React / Redux'} percent={80}/>
-                            <SkillBar skill={'CSS3 / HTML5'} percent={75}/>
+                            <SkillBar skill={'React / Redux'} percent={85}/>
+                            <SkillBar skill={'CSS3 / HTML5'} percent={80}/>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,115 @@
 @import "./src/Common/Styles/Sass/variables";
 @import "./src/Common/Styles/Sass/mixins";
 
-.mainTextAndStatContainer {
-  display: flex;
-  justify-content: center;
+//.aboutBlock {
+//  background-color: $bgSecondColor;
+//  padding: 100px 0;
+//  margin: 0 auto;
+//
+//  .mainTextAndStatContainer {
+//    display: flex;
+//    justify-content: center;
+//
+//    .aboutContainer {
+//      width: $containerWidth;
+//      display: flex;
+//      justify-content: space-between;
+//      align-items: center;
+//      flex-wrap: wrap;
+//      padding: 0 20px;
+//
+//    }
+//  }
+//}
+
+
+.aboutBlock {
+  background-color: $bgSecondColor;
+  padding: 100px 0;
+  margin: 0 auto;
+
+  .mainTextAndStatContainer {
+    display: flex;
+    justify-content: center;
+
+    .aboutContainer {
+      width: $containerWidth;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0 15px;
+
+      .mainText {
+        @include flexColumn();
+        position: relative;
+        width: 50%;
+
+        h3 {
+          @include textForAll($montserrat, 22px, 700, $subtitleTextColor);
+          margin: 0 0 15px;
+        }
+
+        p {
+          @include textForAll($poppins, 16px, 400, $paragraphTextColor);
+          line-height: 28px;
+          width: 515px;
+          margin: 0 0 15px;
+          @media screen and (max-width: 1200px) {
+            width: 415px;
+          }
+          @media screen and (max-width: 992px) {
+            width: 305px;
+          }
+          @media screen and (max-width: 716px) {
+            width: 450px;
+            text-align: center;
+          }
+          @media screen and (max-width: 480px) {
+            width: 270px;
+          }
+        }
+
+        .buttonBlock {
+          margin: 30px 0 0;
+        }
+
+        @media screen and (max-width: 716px) {
+          align-items: center;
+          width: 100%;
+        }
+      }
+
+      .right {
+        @include flex(center);
+        width: 50%;
+        .stat {
+          height: 200px;
+          width: 400px;
+          @include flexColumn();
+          align-items: end;
+          @media screen and (max-width: 992px) {
+            width: 320px;
+          }
+          @media screen and (max-width: 716px) {
+            width: 480px;
+            padding: 0 15px;
+            margin-top: 50px;
+            transition: .4s;
+          }
+          @media screen and (max-width: 480px) {
+            width: 320px;
+            transition: .4s;
+          }
+        }
+        @media screen and (max-width: 716px) {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        justify-content: center;
+      }
+    }
+  }
 }

@@ -1,0 +1,55 @@
+@import "./src/Common/Styles/Sass/variables";
+@import "./src/Common/Styles/Sass/mixins";
+
+.skillBar {
+  margin: 0 0 28px;
+  width: 100%;
+
+  .progressTitleHolder {
+    @include textForAll($montserrat, 14px, 700, $textColor);
+    position: relative;
+    margin: 0 0 15px;
+
+    .progressTitle {
+      text-transform: uppercase;
+    }
+
+    .progressWrapper {
+      .progressMark {
+        margin: 0 0 15px;
+
+        .percent {
+          position: absolute;
+          right: -10px;
+          bottom: -15px;
+          margin: 0 0 15px;
+        }
+
+        &:after {
+          position: absolute;
+          content: "";
+          background: $titleTextColor;
+          border-radius: 50%;
+          box-shadow: 0 0 0 4px $progressMarkShadowColor;
+          width: 14px;
+          height: 14px;
+          right: 0;
+          bottom: -25px;
+        }
+      }
+    }
+  }
+
+
+  .progressOuter {
+    height: 8px;
+    border-radius: 4px;
+    background-color: $lineColor;
+
+    .progressContent {
+      height: 8px;
+      border-radius: 4px;
+      background-color: $titleTextColor;
+    }
+  }
+}

@@ -1,56 +1,12 @@
 @import "./src/Common/Styles/Sass/variables";
 @import "./src/Common/Styles/Sass/mixins";
 
-//.titleBlock {
-//  margin-top: 40px;
-//  position: relative;
-//
-//  .titleBlock h2 {
-//    font-family: 'Montserrat', sans-serif;
-//    font-size: 60px;
-//    font-weight: 700;
-//    line-height: 1.2;
-//    color: $textColor;
-//    margin: 0;
-//  }
-//
-//  .horizontalLine {
-//    height: 2px;
-//    margin: 0 auto;
-//
-//    .top {
-//      background-color: $lineColor;
-//      width: 44px;
-//      height: 1.5px;
-//      margin: 0 auto 5px;
-//    }
-//
-//    .bottom {
-//      background-color: $lineColor;
-//      width: 77px;
-//      height: 1.5px;
-//      margin: 0 auto;
-//    }
-//
-//    // & = titleBlock
-//    &::before {
-//      position: absolute;
-//      content: '';
-//      background: $primaryColor;
-//      width: 55px;
-//      height: 3px;
-//      bottom: -20px;
-//      left: 50%;
-//      transform: translate(-50%, 50%);
-//    }
-//  }
-//}
 .titleBlock {
   margin: 0 auto 60px;
   text-transform: uppercase;
   text-align: center;
   h2 {
-    @include textTitle($montserrat, 32px, 700, $textColor);
+    @include textForAll($montserrat, 32px, 700, $textColor);
     line-height: 24px;
     text-transform: uppercase;
     margin: 0 0 15px;
@@ -68,12 +24,12 @@
       margin: 0 auto 5px;
     }
 
-    .bottom {
-      background-color: $lineColor;
-      width: 77px;
-      height: 1.5px;
-      margin: 0 auto;
-    }
+    //.bottom {
+    //  background-color: $lineColor;
+    //  width: 77px;
+    //  height: 1.5px;
+    //  margin: 0 auto;
+    //}
   }
 }
 

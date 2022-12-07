@@ -1,4 +1,4 @@
-// $ = переменная
+// $ = variable
 
 // Colors
 $textColor: #494949;
@@ -7,6 +7,9 @@ $bgFirstColor: #fff;
 $bgSecondColor: #f5f5f5;
 $lineColor: #bcbcbc;
 $titleTextColor: #494949;
+$subtitleTextColor: #4F4F4F;
+$progressMarkShadowColor: #4949497F; // for skillBar percent
+//$progressTitleColor: #5e5e5e;
 
 // fonts
 $TitleFontFamily: 'Inter', sans-serif;
@@ -14,7 +17,7 @@ $DescriptionFontFamily: 'Inter', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
 $poppins: 'Poppins', sans-serif;
 
-// Иконка для контакта и цвет текста
+// icon for contact
 $awesome: 'Font Awesome 5 Free', sans-serif;
 $paragraphTextColor: #6a6a6a;
 
@@ -29,5 +32,3 @@ $buttonHoverColor: #000000;
 
 
 $containerWidth: 1170px;
-
-

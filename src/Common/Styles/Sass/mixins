@@ -7,7 +7,7 @@
   color: $textColor;
 }
 
-@mixin textTitle($fontFamily, $fountSize, $fontWeight, $color) {
+@mixin textForAll($fontFamily, $fountSize, $fontWeight, $color) {
   font-family: $fontFamily;
   font-size: $fountSize;
   font-weight: $fontWeight;
@@ -33,11 +33,15 @@
   }
 }
 
+@mixin flex($justifyContent) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-@mixin textForAll($fontFamily, $fountSize, $fontWeight, $color) {
-  font-family: $fontFamily;
-  font-size: $fountSize;
-  font-weight: $fontWeight;
-  color: $color;
-  letter-spacing: 0.4px;
+@mixin flexColumn() {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }

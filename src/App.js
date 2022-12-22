@@ -1,12 +1,12 @@
 import React from "react";
 import './App.css';
-import Header from "./Header/Header";
-import Main from "./Main/Main";
-import Skills from "./Skills/Skills";
-import MyProjects from "./Projects/MyProjects";
-import Contacts from "./Contacts/Contacts";
-import Footer from "./Footer/Footer";
-import {AboutMe} from "./AboutMe/AboutMe";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import {AboutMe} from "./components/AboutMe/AboutMe";
+import Skills from "./components/Skills/Skills";
+import MyProjects from "./components/Projects/MyProjects";
+import Contacts from "./components/Contacts/Contacts";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {

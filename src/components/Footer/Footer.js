@@ -1,12 +1,14 @@
 import React from "react";
 import s from './Footer.module.scss';
-import styleContainer from './../Common/Styles/Container.module.css';
+import styleContainer from './../../Common/Styles/Container.module.css';
+import {Title} from "../../Common/Components/Title/Title";
 
 function Footer() {
     return (
         <div className={s.footerBlock}>
             <div className={`${styleContainer.container} ${s.footerContainer}`}>
-                <h2 className={s.title}>Yuheni Mikhaylov</h2>
+                <Title value={'Yuheni Mikhaylov'}/>
+                {/*<h2 className={s.title}>Yuheni Mikhaylov</h2>*/}
                 <div className={s.socialItems}>
                     <div className={s.socialItem}></div>
                     <div className={s.socialItem}></div>

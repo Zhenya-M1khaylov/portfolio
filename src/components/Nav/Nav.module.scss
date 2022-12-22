@@ -1,0 +1,27 @@
+@import "./src/Common/Styles/Sass/variables";
+@import "./src/Common/Styles/Sass/mixins";
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 10px;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 500px;
+
+  li {
+    list-style-type: none;
+  }
+
+  li a {
+    @include textForAll($montserrat, 20px, 700, $textColor);
+    letter-spacing: 1.1px;
+    opacity: 0.9;
+  }
+}
+
+

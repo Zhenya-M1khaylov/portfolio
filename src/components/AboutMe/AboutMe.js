@@ -1,8 +1,8 @@
 import React from 'react'
 import s from './AboutMe.module.scss'
-import {Button} from "../Common/Components/Button/Button";
+import {Button} from "../../Common/Components/Button/Button";
+import {Title} from "../../Common/Components/Title/Title";
 import {SkillBar} from "./SkillBar/SkillBar";
-import {Title} from "../Common/Components/Title/Title";
 
 
 export const AboutMe = () => {

@@ -18,7 +18,7 @@ function Contacts() {
                         <p>Want to build something amazing together? Reach out to me using the form below!</p>
                     </div>
                     <div className={s.contacts}>
-                        <Contact title={'Phone'} description={'+375(25)936-98-05'}/>
+                        <Contact title={'Phone'} description={'+375 (25) 936-98-05'}/>
                         <Contact title={'Email'} description={'yuheni.mikhaylov@gmail.com'}/>
                         <Contact title={'Location'} description={'Minsk, Belarus'}/>
                     </div>

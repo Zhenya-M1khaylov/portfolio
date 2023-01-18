@@ -2,7 +2,7 @@
 @import "./src/Common/Styles/Sass/mixins";
 
 .titleBlock {
-  margin: 0 auto 60px;
+  margin: 0 auto 40px;
   text-transform: uppercase;
   text-align: center;
   h2 {
@@ -11,6 +11,7 @@
     text-transform: uppercase;
     margin: 0 0 15px;
     word-wrap: break-word;
+    padding-top: 20px;
   }
 
   .horizontalLine {

@@ -45,3 +45,10 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
+@mixin border($borderTop, $borderRight, $borderBottom, $borderLeft) {
+  border-top: $borderTop;
+  border-right: $borderRight;
+  border-bottom: $borderBottom;
+  border-left: $borderLeft;
+}

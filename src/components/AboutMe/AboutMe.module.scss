@@ -1,28 +1,6 @@
 @import "./src/Common/Styles/Sass/variables";
 @import "./src/Common/Styles/Sass/mixins";
 
-//.aboutBlock {
-//  background-color: $bgSecondColor;
-//  padding: 100px 0;
-//  margin: 0 auto;
-//
-//  .mainTextAndStatContainer {
-//    display: flex;
-//    justify-content: center;
-//
-//    .aboutContainer {
-//      width: $containerWidth;
-//      display: flex;
-//      justify-content: space-between;
-//      align-items: center;
-//      flex-wrap: wrap;
-//      padding: 0 20px;
-//
-//    }
-//  }
-//}
-
-
 .aboutBlock {
   background-color: $bgSecondColor;
   padding: 100px 0;
@@ -55,15 +33,18 @@
           line-height: 28px;
           width: 515px;
           margin: 0 0 15px;
-          @media screen and (max-width: 1200px) {
+          @media screen and (max-width: 1270px) {
             width: 415px;
           }
-          @media screen and (max-width: 992px) {
+          @media screen and (max-width: 1105px) {
             width: 305px;
           }
-          @media screen and (max-width: 716px) {
+          @media screen and (max-width: 870px) {
             width: 450px;
             text-align: center;
+          }
+          @media screen and (max-width: 670px) {
+            width: 330px;
           }
           @media screen and (max-width: 480px) {
             width: 270px;
@@ -74,7 +55,7 @@
           margin: 30px 0 0;
         }
 
-        @media screen and (max-width: 716px) {
+        @media screen and (max-width: 870px) {
           align-items: center;
           width: 100%;
         }
@@ -91,19 +72,25 @@
           @media screen and (max-width: 992px) {
             width: 320px;
           }
-          @media screen and (max-width: 716px) {
+          @media screen and (max-width: 870px) {
             width: 480px;
             padding: 0 15px;
             margin-top: 50px;
             transition: .4s;
+          }
+          @media screen and (max-width: 670px) {
+            width: 360px;
           }
           @media screen and (max-width: 480px) {
             width: 320px;
             transition: .4s;
           }
         }
-        @media screen and (max-width: 716px) {
+        @media screen and (max-width: 870px) {
           width: 100%;
+        }
+        @media screen and (max-width: 360px) {
+          width: 85%;
         }
       }
 

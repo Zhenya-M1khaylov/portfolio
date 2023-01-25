@@ -3,13 +3,15 @@ import s from './AboutMe.module.scss'
 import {Button} from "../../Common/Components/Button/Button";
 import {Title} from "../../Common/Components/Title/Title";
 import {SkillBar} from "./SkillBar/SkillBar";
+import styleContainer from "../../Common/Styles/Container.module.css";
 
 
 export const AboutMe = () => {
     return (
         <div className={s.aboutBlock}>
             <Title value={'About me'}/>
-            <div className={s.mainTextAndStatContainer}>
+            {/*<div className={s.mainTextAndStatContainer}>*/}
+                <div className={`${styleContainer.container} ${s.mainTextAndStatContainer}`}>
                 <div className={s.aboutContainer}>
                     <div className={s.mainText}>
                         <h3>Howdy!</h3>

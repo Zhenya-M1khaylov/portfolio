@@ -7,7 +7,6 @@ export const Title = (props) => {
             <h2>{props.value}</h2>
             <div className={s.horizontalLine}>
                 <div className={s.top}/>
-                {/*<div className={s.bottom}/>*/}
             </div>
         </div>
     );

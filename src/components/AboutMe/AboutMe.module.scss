@@ -11,12 +11,15 @@
     justify-content: center;
 
     .aboutContainer {
-      width: $containerWidth;
+      width: 1170px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
       padding: 0 15px;
+      @media screen and (max-width: 1300px) {
+        padding: 0 80px;
+      }
 
       .mainText {
         @include flexColumn();

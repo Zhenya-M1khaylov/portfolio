@@ -6,7 +6,7 @@
 
   .contactsContainer {
     @include flex(space-between);
-    max-width: $containerWidth;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 100px 0;
     @media screen and (max-width: 1200px) {
@@ -30,12 +30,6 @@
 
       .titleBlock {
         margin: 0 0 30px;
-        @media screen and (max-width: 740px) {
-          //text-align: center;
-        }
-        @media screen and (max-width: 590px) {
-
-        }
 
         p {
           @include textForAll($poppins, 14px, 400, $paragraphTextColor);

@@ -10,7 +10,7 @@
 
   .icon {
     @include textForAll($awesome, 24px, 900, $textColor);
-    @include icon ('\f095', 47px, $borderIcon, none);
+    @include icon ('\f007', 47px, $borderIcon, none);
     float: left;
     margin-right: 12px;
   }

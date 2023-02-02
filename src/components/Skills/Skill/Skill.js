@@ -1,15 +1,17 @@
 import React from 'react';
-import style from './Skill.module.css'
+import s from './Skill.module.scss'
 
 
 const Skill = (props) => {
     return (
-        <div className={style.skill}>
-            <div className={style.icon}></div>
-            <h3>{props.title}</h3>
-            <span className={style.description}>
-                {props.description}
-            </span>
+        <div className={s.skillWrapper}>
+            <img className={s.skillImg} src={props.image} alt="skillPhoto"/>
+            <h4 className={s.skillTitle}>{props.title}</h4>
+            <ul className={`${s.skill__list}`}>
+                {props.skillDescription.map((d,index) => {
+                    return <li className={`${s.skill__listItem}`} key={index}>{d}</li>
+                })}
+            </ul>
         </div>
     );
 };

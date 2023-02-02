@@ -1,0 +1,54 @@
+@import "./src/Common/Styles/Sass/variables";
+@import "./src/Common/Styles/Sass/mixins";
+
+.skillWrapper {
+  padding: 5px 10px;
+  margin: 10px 0;
+  width: calc(100% / 4 - 10px);
+}
+
+.skillImg {
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.skillTitle {
+  @include textForAll($montserrat, 22px, 700, $subtitleTextColor);
+  margin-bottom: 10px;
+}
+
+.skill__list {
+  list-style: none;
+  text-align: center;
+}
+
+.skill__listItem {
+  @include textForAll($poppins, 16px, 400, $paragraphTextColor)
+}
+
+.skill__listItem:before {
+  content: "\2022";
+  color: $progressMarkShadowColor;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -3em;
+}
+@media screen and (max-width: 800px) {
+  .skillWrapper {
+    width: calc(100% / 3 - 10px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skillWrapper {
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .skillWrapper {
+    width: calc(100% / 1 - 10px);
+  }
+}

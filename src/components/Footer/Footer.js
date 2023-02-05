@@ -1,6 +1,6 @@
 import React from "react";
 import s from './Footer.module.scss';
-import styleContainer from './../../Common/Styles/Container.module.css';
+import styleContainer from '../../Common/Styles/Container.module.scss';
 import {Title} from "../../Common/Components/Title/Title";
 import gmailIcon from '../../Assets/Icons/gmail.svg';
 import linkedInIcon from '../../Assets/Icons/linkedin.svg';

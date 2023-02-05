@@ -3,7 +3,7 @@ import s from './AboutMe.module.scss'
 import {Button} from "../../Common/Components/Button/Button";
 import {Title} from "../../Common/Components/Title/Title";
 import {SkillBar} from "./SkillBar/SkillBar";
-import styleContainer from "../../Common/Styles/Container.module.css";
+import styleContainer from "../../Common/Styles/Container.module.scss";
 
 
 export const AboutMe = () => {

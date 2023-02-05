@@ -1,88 +1,123 @@
 @import "./src/Common/Styles/Sass/variables";
 @import "./src/Common/Styles/Sass/mixins";
 
-
 .project {
-  width: 250px;
-  background-color: $bgSecondColor;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  .iconProject {
-    height: 350px;
-    width: 100%;
-    display: flex;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    // & будет = iconProject
-    &::before {
-      position: absolute;
-      content: '';
-      background-color: black;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.5;
-    }
-
-    .btn {
-      align-self: center;
-      margin: 0 auto;
-      cursor: pointer;
-      background-color: $primaryColor;
-      padding: 10px 20px;
-      color: $textColor;
-      position: relative;
-      z-index: 1;
+  &:nth-child(3) {
+    @media screen and (max-width: 992px) {
+      margin-top: 50px;
     }
   }
 
-  .projectInfo {
-    padding: 20px;
+  &:nth-child(2) {
+    @media screen and (max-width: 716px) {
+      margin-top: 50px;
+    }
+  }
 
-    .projectTitle {
-      //font-family: 'Inter', sans-serif;
-      //font-size: 24px;
-      //line-height: 32px;
-      //color: $textColor;
+  .img {
+    @include flex(center);
+    height: 350px;
+    width: 350px;
+    background-size: 150%;
+    background-position: center;
+    position: relative;
+    transition: .4s ease-in-out;
 
-      @include text($TitleFontFamily, 24px, 32px);
-
-      font-weight: 500;
-      letter-spacing: 1px;
-      margin-bottom: 20px;
+    &:before {
+      position: absolute;
+      content: '';
+      background-color: #ffffff;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      transition: .4s ease-in-out;
+      @media screen and (max-width: 716px) {
+        opacity: 0.8;
+      }
     }
 
-    .projectDescription {
-      //font-family: $DescriptionFontFamily;
-      //font-size: 16px;
-      //line-height: 28px;
-      //color: $textColor;
+    @media screen and (max-width: 1200px) {
+      height: 300px;
+      width: 300px;
+      transition: .4s ease-in-out;
+    }
+    @media screen and (max-width: 992px) {
+      height: 310px;
+      width: 310px;
+      transition: .4s ease-in-out;
+    }
+    @media screen and (max-width: 716px) {
+      height: 420px;
+      width: 420px;
+      transition: .4s ease-in-out;
+    }
+    @media screen and (max-width: 480px) {
+      height: 270px;
+      width: 270px;
+      transition: .4s ease-in-out;
+    }
 
-      @include text($DescriptionFontFamily, 16px, 28px);
+    .zoomIcon {
+      @include textForAll($awesome, 26px, 900, $buttonTextColor);
+      @include icon('\f0c1', 60px, none, #49494959);
+      opacity: 0;
+      cursor: initial;
+      transition: .4s ease-in-out;
+      @media screen and (max-width: 716px) {
+        opacity: 1;
+      }
+    }
 
-      margin-bottom: 22px;
+    .title {
+      position: absolute;
+      bottom: 0;
       text-align: left;
+      left: 30px;
+      opacity: 0;
+      transition: .3s .1s ease-in-out;
+      @media screen and (max-width: 716px) {
+        bottom: 40px;
+        opacity: 1;
+      }
+
+      a {
+        @include textForAll($montserrat, 24px, 400, $paragraphTextColor);
+        text-decoration: none;
+        color: $paragraphTextColor;
+      }
+
+      span {
+        @include textForAll($montserrat, 14px, 400, $textColor);
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 716px) {
+      background-size: 200%;
+    }
+
+    &:hover {
+      background-size: 200%;
+      transition: background-size .4s ease-in-out;
+
+      .title {
+        bottom: 40px;
+        opacity: 1;
+        transition: .3s .1s ease-in-out;
+      }
+
+      .zoomIcon {
+        opacity: 1;
+        transition: .4s ease-in-out;
+      }
+
+      &::before {
+        opacity: 0.8;
+        transition: .4s ease-in-out;
+      }
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

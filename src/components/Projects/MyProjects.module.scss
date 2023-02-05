@@ -1,26 +1,24 @@
 @import "../../../src/Common/Styles/Sass/variables";
 
 .projectsBlock {
-  height: 100vh;
   background-color: $bgSecondColor;
+  padding: 0 15px;
 
   .projectsContainer {
-    justify-content: flex-start;
-
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
     .projects {
-      border: 1px solid;
-      //width: 1350px;
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
-      box-sizing: border-box;
-      margin-top: 150px;
-      align-items: flex-start;
-      @media screen and (max-width: 1129px) {
-        justify-content: center;
+      padding: 30px;
+
+      @media screen and (max-width: 992px) {
+        justify-content: space-around;
       }
     }
   }
 }
-

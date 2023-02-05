@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Skills.module.scss'
-import styleContainer from './../../Common/Styles/Container.module.css'
+import styleContainer from '../../Common/Styles/Container.module.scss'
 import Skill from "./Skill/Skill";
 import {Title} from "../../Common/Components/Title/Title";
 import HTML from '../../Assets/Icons/css.svg'
@@ -15,9 +15,9 @@ const Skills = () => {
     return (
         <section id="skills" className={`${s.skills}`}>
             <div className={`${styleContainer.container}`}>
-                <div className={`${s.skills__wrapper}`}>
+                <div className={`${s.skillsWrapper}`}>
                     <Title value={'Skills'}/>
-                        <div className={`${s.skills__list}`}>
+                        <div className={`${s.skillsList}`}>
                             <Skill
                                 title={'HTML/CSS'}
                                 skillDescription={['semantics', 'аdaptive', 'flexbox/grid', 'BEM', 'SASS']}

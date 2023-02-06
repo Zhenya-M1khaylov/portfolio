@@ -6,7 +6,7 @@
   text-transform: uppercase;
   text-align: center;
   h2 {
-    @include textForAll($montserrat, 32px, 700, $textColor);
+    @include textForAll($montserrat, 32px, 700, $forIcons);
     line-height: 24px;
     text-transform: uppercase;
     margin: 0 0 15px;
@@ -19,9 +19,9 @@
     margin: 0 auto;
 
     .top {
-      background-color: $lineColor;
+      background-color: $forAccent;
       width: 44px;
-      height: 1.5px;
+      height: 2.5px;
       margin: 0 auto 5px;
     }
   }

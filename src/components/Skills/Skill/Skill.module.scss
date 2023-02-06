@@ -14,7 +14,8 @@
 }
 
 .skillTitle {
-  @include textForAll($montserrat, 22px, 700, $subtitleTextColor);
+  //@include textForAll($montserrat, 22px, 700, $subtitleTextColor);
+  @include textForAll($montserrat, 22px, 700, $forAccent);
   margin-bottom: 10px;
 }
 
@@ -24,12 +25,12 @@
 }
 
 .skill__listItem {
-  @include textForAll($poppins, 16px, 400, $paragraphTextColor)
+  @include textForAll($montserrat, 16px, 400, $paragraphTextColor)
 }
 
 .skill__listItem:before {
   content: "\2022";
-  color: $textColor;
+  color: $forIcons;
   font-weight: bold;
   display: inline-block;
   width: 1em;

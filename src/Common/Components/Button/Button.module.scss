@@ -6,7 +6,7 @@
   button {
     @include textForAll($montserrat, 14px, 700, $buttonTextColor);
     padding: 0 50px;
-    background-color: $buttonColor;
+    background-color: $forIcons;
     border-radius: 5px;
     min-height: 47px;
     text-transform: uppercase;

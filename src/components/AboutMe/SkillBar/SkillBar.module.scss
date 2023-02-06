@@ -28,9 +28,11 @@
         &:after {
           position: absolute;
           content: "";
-          background: $titleTextColor;
+          //background: $titleTextColor;
+          background: $forAccent;
           border-radius: 50%;
-          box-shadow: 0 0 0 4px $progressMarkShadowColor;
+          //box-shadow: 0 0 0 4px $progressMarkShadowColor;
+          box-shadow: 0 0 0 4px $forIcons;
           width: 14px;
           height: 14px;
           right: 0;
@@ -49,7 +51,8 @@
     .progressContent {
       height: 8px;
       border-radius: 4px;
-      background-color: $titleTextColor;
+      //background-color: $titleTextColor;
+      background-color: $forAccent;
     }
   }
 }

@@ -10,7 +10,6 @@ import REST from '../../Assets/Icons/api.svg'
 import REDUX from '../../Assets/Icons/redux.svg'
 import TYPESCRIPT from '../../Assets/Icons/ts.svg'
 
-
 const Skills = () => {
     return (
         <section id="skills" className={`${s.skills}`}>
@@ -43,8 +42,6 @@ const Skills = () => {
                                 skillDescription={['Func components', 'Class components', 'HOC', 'React router dom', 'Hooks']}
                                 image={REACT}
                             />
-
-
                             <Skill
                                 title={'REDUX'}
                                 skillDescription={['FLUX', 'Thunk', 'RTK']}

@@ -27,12 +27,13 @@
         width: 50%;
 
         h3 {
-          @include textForAll($montserrat, 22px, 700, $subtitleTextColor);
+          //@include textForAll($montserrat, 22px, 700, $subtitleTextColor);
+          @include textForAll($montserrat, 22px, 700, $forIcons);
           margin: 0 0 15px;
         }
 
         p {
-          @include textForAll($poppins, 16px, 400, $paragraphTextColor);
+          @include textForAll($montserrat, 16px, 400, $paragraphTextColor);
           line-height: 28px;
           width: 515px;
           margin: 0 0 15px;

@@ -2,10 +2,10 @@ import React from "react";
 import s from './Footer.module.scss';
 import styleContainer from '../../Common/Styles/Container.module.scss';
 import {Title} from "../../Common/Components/Title/Title";
-import gmailIcon from '../../Assets/Icons/gmail.svg';
-import linkedInIcon from '../../Assets/Icons/linkedin.svg';
-import telegramIcon from '../../Assets/Icons/telegram.svg';
-import gitIcon from '../../Assets/Icons/github.svg';
+import gmailIcon from '../../Assets/Icons/FooterIcons/gmail.svg';
+import linkedInIcon from '../../Assets/Icons/FooterIcons/linkedin.svg';
+import telegramIcon from '../../Assets/Icons/FooterIcons/telegram.svg';
+import gitIcon from '../../Assets/Icons/FooterIcons/github.svg';
 
 function Footer() {
     return (

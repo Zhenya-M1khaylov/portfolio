@@ -4,7 +4,7 @@
 .footerBlock {
   display: flex;
   height: content-box;
-  background-color: $bgSecondColor;
+  background-color: $FooterColor;
   justify-content: center;
 }
 
@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 35px;
+  gap: 25px;
   width: 100%;
   max-width: 1440px;
 }
@@ -44,7 +44,7 @@
 
   a {
     text-decoration: none;
-    @include textForAll($montserrat, 16px, 700, $textColor);
+    @include textForAll($montserrat, 16px, 700, $forIcons);
     letter-spacing: 1.1px;
     opacity: 0.9;
   }

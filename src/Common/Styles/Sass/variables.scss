@@ -1,6 +1,10 @@
 // $ = variable
 
 // Colors
+$forIcons: #514181;
+$forAccent: #ebae34;
+$FooterColor: #b6acc5;
+
 $textColor: #494949;
 $primaryColor: #bcbcbc;
 $bgFirstColor: #fff;
@@ -22,7 +26,7 @@ $awesome: 'Font Awesome 5 Free', sans-serif;
 $paragraphTextColor: #6a6a6a;
 
 // borders
-$borderIcon: 1px solid $textColor;
+$borderIcon: 1px solid $forIcons;
 $borderLine: 1px solid $lineColor;
 
 //buttons

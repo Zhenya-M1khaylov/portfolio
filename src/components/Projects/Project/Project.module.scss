@@ -2,8 +2,20 @@
 @import "./src/Common/Styles/Sass/mixins";
 
 .project {
-  &:nth-child(3) {
+  &:nth-child(4) {
     @media screen and (max-width: 992px) {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+  &:nth-child(6) {
+    @media screen and (max-width: 716px) {
+      margin-top: 50px;
+    }
+  }
+
+  &:nth-child(3) {
+    @media screen and (max-width: 716px) {
       margin-top: 50px;
     }
   }
@@ -54,6 +66,11 @@
     @media screen and (max-width: 480px) {
       height: 270px;
       width: 270px;
+      transition: .4s ease-in-out;
+    }
+    @media screen and (max-width: 360px) {
+      height: 230px;
+      width: 230px;
       transition: .4s ease-in-out;
     }
 

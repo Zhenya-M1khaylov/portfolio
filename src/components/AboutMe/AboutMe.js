@@ -22,7 +22,7 @@ export const AboutMe = () => {
                             them with new technologies. I also plan to learn React Native in the future. Open for your
                             suggestions!</p>
                         <div className={s.buttonBlock}>
-                            <Button name={'Download my CV'}/>
+                            <Button title={'Download my CV'}/>
                         </div>
                     </div>
                     <div className={s.right}>

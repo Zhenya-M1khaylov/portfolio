@@ -5,7 +5,7 @@ import s from './Button.module.scss'
 export const Button = (props) => {
     return (
         <div className={s.buttonBlock}>
-            <button>{props.name}</button>
+            <button>{props.title}</button>
         </div>
     )
 }

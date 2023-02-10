@@ -1,4 +1,5 @@
 @import "./src/Common/Styles/Sass/variables.scss";
+@import "./src/Common/Styles/Sass/mixins";
 
 .mainBlock {
     height: 100vh;
@@ -6,12 +7,12 @@
 
 }
 
-.text {
+.mainText {
     width: 300px;
     background-color: bisque;
 }
 
-.photo {
+.mainPhoto {
     width: 300px;
     height: 400px;
     background-color: bisque;

@@ -1,17 +1,22 @@
 import React from 'react';
 import s from './Main.module.scss'
-import styleContainer from '../../Common/Styles/Container.module.scss'
+import {Button} from "../../Common/Components/Button/Button";
 
 const Main = () => {
 
     return (
-        <div className={s.mainBlock}>
-            <div className={styleContainer.container}>
+        <div className={s.mainBlock} id="home">
+            <div className={s.mainContainer}>
 
                 <div className={s.mainText}>
                     <h5>Hello, my name is</h5>
                     <h1>I am Yuheni Mikhaylov</h1>
-                    <p>I’m a frontend developer. I would like to find full-time employment or project work in a company with a modern approach to development and a collaborative team.</p>
+                    <p>
+                        I’m a frontend developer.
+                    </p>
+                    <div className={s.buttonBlock}>
+                        <Button title={'my work'}/>
+                    </div>
                 </div>
 
                 <div className={s.mainPhoto}></div>

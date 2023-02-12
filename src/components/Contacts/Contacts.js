@@ -24,7 +24,7 @@ function Contacts() {
     };
 
     return (
-        <div className={s.contactsBlock}>
+        <div className={s.contactsBlock} id="contacts">
             <div className={`${styleContainer.container} ${s.contactsContainer}`}>
                 <div className={s.getTouch}>
                     <div className={s.titleBlock}>

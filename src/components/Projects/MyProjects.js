@@ -13,20 +13,20 @@ import socialNetwork from '../../Assets/Image/social.jpg'
 
 const MyProjects = () => {
     return (
-        <div className={s.projectsBlock}>
+        <div className={s.projectsBlock} id="projects">
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
                 <Title value={'My projects'}/>
                 <div className={s.projects}>
                     <Project
                         style={todoAPP}
                         title={'Todolist'}
-                        description={'To-do list app'}
-                        url={'https://zhenya-m1khaylov.github.io/todolist/'}
+                        description={'Todolist app'}
+                        url={''}
                     />
                     <Project
                         style={socialNetwork}
                         title={'Social Network'}
-                        description={'Social network'}
+                        description={'Social network on React'}
                         url={''}
                     />
                     <Project
@@ -39,7 +39,7 @@ const MyProjects = () => {
                         style={password}
                         title={'Password generator'}
                         description={'Password generator'}
-                        url={'https://zhenya-m1khaylov.github.io/pass-generator-app/'}
+                        url={''}
                     />
                     <Project
                         style={creditCard}

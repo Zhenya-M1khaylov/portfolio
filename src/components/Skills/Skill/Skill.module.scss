@@ -14,7 +14,6 @@
 }
 
 .skillTitle {
-  //@include textForAll($montserrat, 22px, 700, $subtitleTextColor);
   @include textForAll($montserrat, 22px, 700, $forAccent);
   margin-bottom: 10px;
 }

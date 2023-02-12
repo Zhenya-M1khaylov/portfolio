@@ -10,7 +10,6 @@ export const AboutMe = () => {
     return (
         <div className={s.aboutBlock}>
             <Title value={'About me'}/>
-            {/*<div className={s.mainTextAndStatContainer}>*/}
                 <div className={`${styleContainer.container} ${s.mainTextAndStatContainer}`}>
                 <div className={s.aboutContainer}>
                     <div className={s.mainText}>

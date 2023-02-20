@@ -5,8 +5,10 @@
   background-color: $bgFirstColor;
 
   .contactsContainer {
-    @include flex(space-between);
-    max-width: 1170px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding: 60px 0;
     @media screen and (max-width: 1200px) {
@@ -20,7 +22,7 @@
       width: 450px;
     }
     @media screen and (max-width: 590px) {
-      width: 270px;
+      width: 295px;
     }
 
     .getTouch {
@@ -29,7 +31,7 @@
       justify-content: flex-start;
 
       .titleBlock {
-        margin: 0 0 30px;
+        margin: 0 30px 30px;
         @media screen and (max-width: 750px) {
           margin: 0 0 0px;
         }
@@ -38,6 +40,9 @@
           @include textForAll($poppins, 14px, 400, $paragraphTextColor);
           line-height: 24px;
           margin: 0 0 15px;
+          @media screen and (max-width: 590px) {
+            margin: 0 50px 25px;
+          }
         }
       }
 
@@ -57,7 +62,7 @@
     }
 
     form {
-      width: 780px;
+      //width: 780px;
       @media screen and (max-width: 1200px) {
         width: 616px;
       }
@@ -71,10 +76,11 @@
       .contactForm {
         margin: 0 auto;
         max-width: 500px;
-        padding-top: 40px;
+        padding-top: 60px;
         @include flexColumn();
         @media screen and (max-width: 740px) {
           align-items: center;
+          padding-top: 20px;
         }
         @media screen and (max-width: 590px) {
           width: 100%;
@@ -91,20 +97,19 @@
             @include flexColumn();
             padding-right: 38px;
           }
-          @media screen and (max-width: 590px) {
-            padding-right: 24px;
-          }
-          @media screen and (max-width: 398px) {
-            width: 75%;
-            padding-right: 40px;
-          }
+          //@media screen and (max-width: 590px) {
+          //  padding-right: 24px;
+          //}
+          //@media screen and (max-width: 398px) {
+          //  padding-right: 40px;
+          //}
 
           .name, .email {
             padding: 0 15px;
-            width: 50%;
-            @media screen and (max-width: 740px) {
-              width: 100%;
-            }
+            //width: 50%;
+            //@media screen and (max-width: 740px) {
+            //  width: 100%;
+            //}
 
             input {
               @include textForAll($montserrat, 16px, 300, $titleTextColor);
@@ -120,7 +125,7 @@
 
         .message {
           //padding: 0 30px;
-          width: 100%;
+          //width: 100%;
 
           textarea {
             @include textForAll($montserrat, 16px, 300, $titleTextColor);
@@ -132,16 +137,16 @@
             resize: none;
             border: $borderLine;
             padding: 10px 20px;
-            @media screen and (max-width: 740px) {
-              width: 100%;
-              margin-top: 30px;
-            }
-            @media screen and (max-width: 739px) {
-              width: 90%;
-            }
-            @media screen and (max-width: 398px) {
-              width: 85%;
-            }
+            //@media screen and (max-width: 740px) {
+            //  width: 100%;
+            //  margin-top: 30px;
+            //}
+            //@media screen and (max-width: 739px) {
+            //  width: 90%;
+            //}
+            //@media screen and (max-width: 398px) {
+            //  width: 85%;
+            //}
           }
         }
 

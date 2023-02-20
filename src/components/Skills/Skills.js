@@ -39,7 +39,7 @@ const Skills = () => {
                             />
                             <Skill
                                 title={'REACT'}
-                                skillDescription={['Func components', 'Class components', 'HOC', 'React router dom', 'Hooks']}
+                                skillDescription={['Func components', 'Class components', 'HOC', 'Router dom', 'Hooks']}
                                 image={REACT}
                             />
                             <Skill

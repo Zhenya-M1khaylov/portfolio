@@ -7,6 +7,10 @@
   @media screen and (max-width: 716px) {
     margin: 0 0 25px 25px;
   }
+  @media screen and (max-width: 600px) {
+    margin: 0 0 25px 25px;
+    width: 300px;
+  }
 
   .icon {
     @include textForAll($awesome, 24px, 900, $forIcons);

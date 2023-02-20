@@ -33,7 +33,7 @@
   font-weight: bold;
   display: inline-block;
   width: 1em;
-  margin-left: -3em;
+  margin-left: -1em;
 }
 @media screen and (max-width: 800px) {
   .skillWrapper {
@@ -47,8 +47,8 @@
   }
 }
 
-@media screen and (max-width: 450px) {
-  .skillWrapper {
-    width: calc(100% / 1 - 10px);
-  }
-}
+//@media screen and (max-width: 450px) {
+//  .skillWrapper {
+//    width: calc(100% / 1 - 10px);
+//  }
+//}
